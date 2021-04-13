@@ -1,0 +1,14 @@
+# -*- restclient -*-
+
+:api = https://api.cryptonator.com/api
+
+# Simple Ticker
+:coin = btc
+GET :api/ticker/:coin-usd
+
+# Complete Ticker
+:coin = btc
+GET :api/full/:coin-usd
+
+# List of supported currencies
+GET :api/currencies
